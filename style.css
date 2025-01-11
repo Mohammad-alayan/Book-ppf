@@ -76,7 +76,7 @@ body{
     margin-left: 3%;
     
 }
-@media screen and (max-width:808px) {
+@media screen and (max-width:878px) {
     #pad{
         display:none !important;
 
