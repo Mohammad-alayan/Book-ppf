@@ -90,8 +90,16 @@ body{
         margin-top: 70px !important;
     }
   .card{
-    width: 100%;
+    width: 100% !important;
   }
+  #height{
+    height: 400px;
+
+}
+.fix{
+    left: 5% !important;
+    z-index: 100;
+}
 }
 #im{
 width:100px;
@@ -227,7 +235,7 @@ box-shadow: 0 0 30px #F5ECD5;
 }
 .fix{
     position: fixed;
-    left: 80%;
+    left: 85%;
     z-index: 100;
 }
 #div{
