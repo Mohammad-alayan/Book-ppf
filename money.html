@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store_Book PPF</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body style="background-color: #3D3D3D
+;">
+
+    <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand d-md-none" href="#">
+            <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+            BOOK-PPF
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasLabel"> BOOK-PPF</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 justify-content-between">
+                <li class="nav-item"><a class="nav-link" href="#">
+                  <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+                </a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Store
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="self.html">Self Books</a></li>
+                      <li><a class="dropdown-item" href="advanture.html">Fantasy Books</a></li>
+                      <li><a class="dropdown-item" href="psychology.html">Psychology</a></li>
+                    </ul>
+                  </div>              
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+    
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="#">
+                  <svg class="bi" width="24" height="24"><use xlink:href="#cart"></use></svg>
+                </a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+     <main>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" id="carousel">
+              <div class="carousel-item active" >
+                <img src="Book-Club-FFW-10-books-feature.webp" class="d-block w-100 " id="height">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://149502452.v2.pressablecdn.com/wp-content/uploads/2020/11/atomic-habits-book-01-2048x1152.jpeg" class="d-block w-100" alt="..." id="height">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://149502452.v2.pressablecdn.com/wp-content/uploads/2021/02/mindset-book-cover-01-2048x1152.jpeg" class="d-block w-100" alt="..." id="height">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+
+      <div class="container d-flex p-2 justify-content-between flex-wrap" id="card-size">
+        <div class="card" style="width: 18rem;"id="cards">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBxT2oZ8Rhqh2rmLYp5Moq0-7htxhy3aNYItORIDJ-bDgBuV-g" class="card-img-top" alt="..." id="sideimg">
+            <div class="card-body">
+              <h5 class="card-title">The Psychology of Money</h5>
+              <p class="card-text">
+                Doing well with money isn't necessarily about what you know. It's about how you behave. And behavior is hard to teach, even to really smart people            </p>
+      
+                    
+       
+              <a href="orderm.html" id="btn" class="btn btn-primary">  Order Now  <img src="add-to-cart.png" id="addtocart"></a>      
+            </div>
+            
+          </div>
+          <div class="card" style="width: 18rem;"id="cards">
+            <img src="https://www.jashanmal.com/cdn/shop/products/6281072097776.jpg?v=1689247913" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">الأب الغني والأب الفقير </h5>
+              <p class="card-text">يأتي كتاب الأب الغني والأب الفقير، كمحاولة للحد من طوفان العالم الاستهلاكي الذي طغى على حياتنا بشكل غير مسبوق. يحاول مؤلف الكتاب الملياردير روبرت تي كيوساكي إصلاح مفاهيم ترسّخت عند أغلب الناس، فرضوا بالعيش داخل حلبة الحياة الكبيرة كمتسابقين أساسيين في سباق الفئران الذي لا ينتهي.
+              </p>
+        <a href="orderm.html" id="btn" class="btn btn-primary"> Order Now <img src="add-to-cart.png" id="addtocart"></a>      
+
+          </div>
+          </div>  <div class="card" style="width: 18rem;"id="cards">
+            <img src="https://www.harpercollins.com/cdn/shop/files/9780063356733_1600x.jpg?v=1733662330" class="card-img-top" id="btn2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> The Intelligent Investor 
+
+              </h5>
+              <p class="card-text"> The Intelligent Investor by Benjamin Graham, first published in 1949, is a widely acclaimed book on value investing. The book provides strategies on how to successfully use value investing in the stock market. </p>
+                  
+              <a href="orderm.html" id="btn" class="btn btn-primary">  Order Now  <img src="add-to-cart.png" id="addtocart"></a>      
+            </div>
+            </div>            <div class="card" style="width: 18rem;"id="cards">
+              <img src="https://m.media-amazon.com/images/I/6162e7L9gOL.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">The Simple Path to Wealth
+
+              </h5>
+              <p class="card-text">
+                “In the dark, bewildering, trap-infested jungle of misinformation and opaque riddles that is the world of investment, JL Collins is the fatherly wizard on the side of the path, offering a simple map, warm words of encouragement and the tools to forge your way through with confidence</p>  
+              <a href="orderm.html" id="btn" class="btn btn-primary">  Order Now  <img src="add-to-cart.png" id="addtocart"></a>      
+            </div>
+            </div>              </div>
+          </div> 
+          </div></div>
+          <div class="container d-flex p-2 justify-content-between flex-wrap" id="card-size">
+            <div class="card" style="width: 18rem;"id="cards">
+                <img src="https://m.media-amazon.com/images/I/51m+8bXcVcL._SL500_.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Secrets of the Millionaire Mind</h5>
+                  <p class="card-text">For the first time, the secrets, principles, and techniques of Eker's popular personal success seminars are captured on the page for readers across North America. Eker teaches people how to play the inner game of money so that they not only achieve financial success, but keep it once they have it.</p>
+                  <a href="orderm.html" id="btn" class="btn btn-primary"> Order Now  <img src="add-to-cart.png" id="addtocart"></a>      
+
+                 </div>
+                </div>                 
+             
+              <div class="card" style="width: 18rem;"id="cards">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ67dIPLK8KAkDyxGmaE5NLzXhgB2sb9_Yg8DbvmgBA3SnVtb_w" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MONEY Master the Game</h5>
+                  <p class="card-text">Tony Robbins turns to the topic that vexes us all: How to secure financial freedom for ourselves and for our families. “If there were a Pulitzer Prize for investment books, this one would win, hands down” (Forbes).Tony Robbins is one of the most revered writers and thinkers of our time. </p>
+             
+                  <a href="orderm.html" id="btn" class="btn btn-primary">  Order Now  <img src="add-to-cart.png" id="addtocart"></a>      
+                </div>
+              </div>  <div class="card" style="width: 18rem;"id="cards">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1uYibodm3cCOtjQIE3XJcPUj4HMYmVyU9PfpoPj3mOmBJwaph" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Rich Dad's Cashflow Quadrant</h5>
+              
+                  <p class="card-text">In preparing for the Information Age, you must change the rules on how you manage your money. You can no longer blindly accept the idea that your job is secure, that your hard work will be rewarded, your house is an asset and your largest investment and buying mutual funds is safe</p>
+                  <a href="orderm.html" id="btn" class="btn btn-primary">  Order Now  <img src="add-to-cart.png" id="addtocart"></a>      
+
+                </div>
+              </div>  <div class="card" style="width: 18rem;"id="cards">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX7XDk8YY5ijTDvs4HjiQ3PGLsKcE6eSisnEldC_Ro_aEHC-4y" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">You Deserve to Be Rich</h5>
+                  <p class="card-text">'A great book to learn from - It's time to reclaim our financial future, unapologetically' BOLA SOL, author of Your Money Life'A testament to the power of financial education' - STEVE HARVEY'A must read</p>
+                  <a href="orderm.html" id="btn" class="btn btn-primary">  Order Now  <img src="add-to-cart.png" id="addtocart"></a>      
+
+              </div>  
+              </div></div>
+            
+            </main>
+            <script src="script.js"></script>
+
+            </body>
+</html>

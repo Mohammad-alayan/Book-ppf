@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Store_Book PPF</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+    <body style="background-color: #3D3D3D
+;">    
+
+    <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand d-md-none" href="#">
+            <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+            BOOK-PPF
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasLabel"> BOOK-PPF</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 justify-content-between">
+                <li class="nav-item"><a class="nav-link" href="#">
+                  <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+                </a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Store
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="self.html">Self Books</a></li>
+                      <li><a class="dropdown-item" href="money.html">Money Books</a></li>
+                      <li><a class="dropdown-item" href="psychology.html">Psychology</a></li>
+                    </ul>
+                  </div>              
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+    
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="#">
+                  <svg class="bi" width="24" height="24"><use xlink:href="#cart"></use></svg>
+                </a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1"id="login">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel"></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div  class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content rounded-4 shadow">
+                    <div class="modal-header p-5 pb-4 border-bottom-0">
+                      <h2 class="d-flex justify-content-end fw-bold mb-0 fs-2" style="font-size: 35px; margin-right: 50px; color: #3D3D3D;">Total Price:<span id="total-price">0</span></h2>
+                   
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+              
+                    <div class="modal-body p-5 pt-0">
+                      <form class=""id>
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control rounded-3" id="name"  placeholder="First name" required>
+                          <label for="name">First name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control rounded-3" id="lastName" id="lname" placeholder="Last name" required>
+                          <label for="lname">last Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control rounded-3"  id="email" id="floatingInput" placeholder="name@example.com" required>
+                          <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="password" class="form-control rounded-3" id="password" id="floatingPassword" placeholder="Password" required>
+                          <label for="floatingPassword">Password</label>
+                        </div>
+
+                        <a class="w-100 mb-2 btn btn-lg rounded-3 btn-primary"  onclick="offer()">Pay</a>
+
+                        <hr class="my-4">
+                      
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>        </div>
+         
+          </div>
+        </div>
+      </div>
+
+      <div class="fix">
+<small id="number" style="position: absolute; color: #dedede; border-radius: 5%; font-size: 20px;"> 0</small>
+        <button class="btn btn-primary btn-lg" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><img src="add-to-cart.png" id="addtocart"></button>
+       
+      <div id="div">            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSF5Yp1gAM5oSt8ijtEP-E7RIOvv1hbZioVCEugTBDSRVKvHtyn" class="img-fluid rounded-start" alt="...">         
+      </div>
+    </div>
+      <div class="nter">
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBxT2oZ8Rhqh2rmLYp5Moq0-7htxhy3aNYItORIDJ-bDgBuV-g" class="img-fluid rounded-start" alt="...">         
+
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+                  <h5 class="card-title">The Psychology of Money</h5>
+              <p class="card-text">
+                Doing well with money isn't necessarily about what you know. It's about how you behave. And behavior is hard to teach, even to really smart people            </p>
+      
+                    
+              <button  id="minus"  ><img src="minus-sign.png" style="width: 35px ; height: 35px;"></button> <span id="amount" style="font-size: 20px;padding: 10px;">0</span><button id="plus"><img src="plus-symbol-button.png"style="width: 35px ; height: 35px;" ></button>
+              <button id="buy"class="btn btn-primary btn-lg" style="margin-left: 10%;"  onclick="Price('12')"><span id="itemprice">12</span>$ Add to cart </button>
+
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://www.harpercollins.com/cdn/shop/files/9780063356733_1600x.jpg?v=1733662330"  class="img-fluid rounded-start" alt="...">         
+
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">The Intelligent Investor </h5>
+                <p class="card-text">
+                  The Intelligent Investor by Benjamin Graham, first published in 1949, is a widely acclaimed book on value investing. The book provides strategies on how to successfully use value investing in the stock market.              <button  id="minus2"  ><img src="minus-sign.png" style="width: 35px ; height: 35px;"></button> <span id="amount2" style="font-size: 20px;padding: 10px;">0</span><button id="plus2"><img src="plus-symbol-button.png"style="width: 35px ; height: 35px;" ></button>
+              <button id="buy1" class="btn btn-primary btn-lg" style="margin-left: 10%;" onclick="Price('5')"><span id="itemprice">5</span>$ Add to cart  </button>
+              
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://m.media-amazon.com/images/I/6162e7L9gOL.jpg"  class="img-fluid rounded-start" alt="...">         
+
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">
+                  The Simple Path to Wealth
+                </h5>
+                  <p class="card-text"> “In the dark, bewildering, trap-infested jungle of misinformation and opaque riddles that is the world of investment, JL Collins is the fatherly wizard on the side of the path, offering a simple map, warm words of encouragement and the tools to forge your way through with confidence
+
+                  </p>
+                        <button  id="minus3"  ><img src="minus-sign.png" style="width: 35px ; height: 35px;"></button> <span id="amount3" style="font-size: 20px;padding: 10px;">0</span><button id="plus3"><img src="plus-symbol-button.png"style="width: 35px ; height: 35px;" ></button>
+                    
+                                      <button class="btn btn-primary btn-lg" style="margin-left: 10%;" onclick="Price('15')"id="buy2">15$Add to cart </button>
+              
+              
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://m.media-amazon.com/images/I/51m+8bXcVcL._SL500_.jpg" class="img-fluid rounded-start" alt="...">         
+
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">Secrets of the Millionaire Mind
+
+
+                </h5>
+                <p class="card-text">For the first time, the secrets, principles, and techniques of Eker's popular personal success seminars are captured on the page for readers across North America. Eker teaches people how to play the inner game of money so that they not only achieve financial success, but keep it once they have it.
+
+                </p>
+    
+                 <button  id="minus4"  ><img src="minus-sign.png" style="width: 35px ; height: 35px;"></button> <span id="amount4" style="font-size: 20px;padding: 10px;">0</span><button id="plus4"><img src="plus-symbol-button.png"style="width: 35px ; height: 35px;" ></button>
+                    
+                                      <button id="buy3" class="btn btn-primary btn-lg" style="margin-left: 10%;"onclick="Price('8')">8$ Add to cart </button>
+              
+              
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="think_and_grow_rich.jpg" class="img-fluid rounded-start" alt="...">         
+
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">Think and Grow Rich</h5>
+                <p class="card-text">Think and Grow Rich is a book written by Napoleon Hill and Rosa Lee Beeland released in 1937 and promoted as a personal development and self-improvement book. He claimed to be inspired by a suggestion from business magnate and later-philanthropist Andrew Carnegie.</p>
+                <button  id="minus5"  ><img src="minus-sign.png" style="width: 35px ; height: 35px;"></button> <span id="amount5" style="font-size: 20px;padding: 10px;">0</span><button id="plus5"><img src="plus-symbol-button.png"style="width: 35px ; height: 35px;" ></button>
+                    
+                                      <button id="buy4" class="btn btn-primary btn-lg" style="margin-left: 10%;" onclick="Price('34')">34$ Add to cart </button>
+              
+              
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ67dIPLK8KAkDyxGmaE5NLzXhgB2sb9_Yg8DbvmgBA3SnVtb_w" class="img-fluid rounded-start" alt="...">         
+
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">MONEY Master the Game
+                </h5>
+                <p class="card-text"></p>
+                Tony Robbins turns to the topic that vexes us all: How to secure financial freedom for ourselves and for our families. “If there were a Pulitzer Prize for investment books, this one would win, hands down” (Forbes).Tony Robbins is one of the most revered writers and thinkers of our time.
+
+              </p>
+              <button  id="minus6"  ><img src="minus-sign.png" style="width: 35px ; height: 35px;"></button> <span id="amount6"  style="font-size: 20px;padding: 10px;">0</span><button id="plus6"><img src="plus-symbol-button.png"style="width: 35px ; height: 35px;" ></button>
+                    
+                                      <button id="buy5" class="btn btn-primary btn-lg" style="margin-left: 10%;"onclick="Price('23')">23$ Add to cart </button>
+              
+              
+            </div>
+            
+          </div>
+          
+        </div>
+      </div> 
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1uYibodm3cCOtjQIE3XJcPUj4HMYmVyU9PfpoPj3mOmBJwaph" class="img-fluid rounded-start" alt="...">         
+
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">     Rich Dad's Cashflow Quadrant
+
+                </h5>
+                <p class="card-text">
+           
+                
+                  In preparing for the Information Age, you must change the rules on how you manage your money. You can no longer blindly accept the idea that your job is secure, that your hard work will be rewarded, your house is an asset and your largest investment and buying mutual funds is safe
+
+                </p>
+            <button  id="minus7"  ><img src="minus-sign.png" style="width: 35px ; height: 35px;"></button> <span id="amount7" style="font-size: 20px;padding: 10px;">0</span><button id="plus7"><img src="plus-symbol-button.png"style="width: 35px ; height: 35px;" ></button>
+                    
+                                      <button id="buy6" class="btn btn-primary btn-lg" style="margin-left: 10%;" onclick="Price('35')">35$ Add to cart </button>
+              
+              
+            </div>
+            
+          </div>
+          
+        </div>
+      </div> 
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX7XDk8YY5ijTDvs4HjiQ3PGLsKcE6eSisnEldC_Ro_aEHC-4y" class="img-fluid rounded-start" alt="...">         
+
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">You Deserve to Be Rich
+                </h5>
+                <p class="card-text">
+                  'A great book to learn from - It's time to reclaim our financial future, unapologetically' BOLA SOL, author of Your Money Life'A testament to the power of financial education' - STEVE HARVEY'A must read                     <button  id="minus8"  ><img src="minus-sign.png" style="width: 35px ; height: 35px;"></button> <span id="amount8" style="font-size: 20px;padding: 10px;">0</span><button id="plus8"><img src="plus-symbol-button.png"style="width: 35px ; height: 35px;" ></button>
+                    
+                                      <button id="buy7"class="btn btn-primary btn-lg" style="margin-left: 10%;" onclick="Price('15')">15$ Add to cart </button>
+              
+            </div>
+            
+          </div>
+          
+        </div>
+      </div> 
+      
+      <script src="script.js"></script>
+
+</body>
+</html>

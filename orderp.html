@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Store_Book PPF</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+    <body style="background-color: #3D3D3D
+;">    
+
+    <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand d-md-none" href="#">
+            <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+            BOOK-PPF
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasLabel"> BOOK-PPF</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 justify-content-between">
+                <li class="nav-item"><a class="nav-link" href="#">
+                  <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+                </a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Store
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="self.html">Self Books</a></li>
+                      <li><a class="dropdown-item" href="money.html">Money Books</a></li>
+                      <li><a class="dropdown-item" href="psychology.html">Psychology</a></li>
+                    </ul>
+                  </div>              
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+    
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="#">
+                  <svg class="bi" width="24" height="24"><use xlink:href="#cart"></use></svg>
+                </a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1"id="login">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel"></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div  class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content rounded-4 shadow">
+                    <div class="modal-header p-5 pb-4 border-bottom-0">
+                      <h2 class="d-flex justify-content-end fw-bold mb-0 fs-2" style="font-size: 35px; margin-right: 50px; color: #3D3D3D;">Total Price:<span id="total-price" style="color: #3D3D3D;">0</span></h2>
+                   
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+              
+                    <div class="modal-body p-5 pt-0">
+                      <form class=""id>
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control rounded-3" id="name"  placeholder="First name" required>
+                          <label for="name">First name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control rounded-3" id="lastName" id="lname" placeholder="Last name" required>
+                          <label for="lname">last Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control rounded-3"  id="email" id="floatingInput" placeholder="name@example.com" required>
+                          <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="password" class="form-control rounded-3" id="password" id="floatingPassword" placeholder="Password" required>
+                          <label for="floatingPassword">Password</label>
+                        </div>
+
+                        <a class="w-100 mb-2 btn btn-lg rounded-3 btn-primary"  onclick="offer()">Pay</a>
+
+                        <hr class="my-4">
+                      
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>        </div>
+         
+          </div>
+        </div>
+      </div>
+
+      <div class="fix">
+<small id="number" style="position: absolute; color: #dedede; border-radius: 5%; font-size: 20px;"> 0</small>
+        <button class="btn btn-primary btn-lg" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><img src="add-to-cart.png" id="addtocart"></button>
+       
+      <div id="div">            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSF5Yp1gAM5oSt8ijtEP-E7RIOvv1hbZioVCEugTBDSRVKvHtyn" class="img-fluid rounded-start" alt="...">         
+      </div>
+    </div>
+      <div class="nter">
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://m.media-amazon.com/images/I/61cjZXBNl2L.jpg" class="img-fluid rounded-start" alt="...">         
+
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+                  <h5 class="card-title">Predictably Irrational</h5>
+              <p class="card-text">
+                Predictably Irrational: The Hidden Forces That Shape Our Decisions is a 2008 book by Dan Ariely, in which he challenges readers' assumptions about making decisions based on rational thought.
+
+              </p>
+      
+                    
+              <button  id="minus"  ><img src="minus-sign.png" style="width: 35px ; height: 35px;"></button> <span id="amount" style="font-size: 20px;padding: 10px;">0</span><button id="plus"><img src="plus-symbol-button.png"style="width: 35px ; height: 35px;" ></button>
+              <button id="buy"class="btn btn-primary btn-lg" style="margin-left: 10%;"  onclick="Price('16')"><span id="itemprice">16</span>$ Add to cart </button>
+
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSom7qFxq5BuGjKr8OWe_nCkLkvFq9s1Vxswdt7T9yKKBzMmLZX"  class="img-fluid rounded-start" alt="...">         
+
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">Thinking, Fast and Slow</h5>
+                <p class="card-text">
+                  Thinking, Fast and Slow is a 2011 popular science book by psychologist Daniel Kahneman. The book's main thesis is a differentiation between two modes of thought: "System 1" is fast, instinctive and emotional; "System 2" is slower, more deliberative, and more logical
+
+                </p>
+              <button  id="minus2"  ><img src="minus-sign.png" style="width: 35px ; height: 35px;"></button> <span id="amount2" style="font-size: 20px;padding: 10px;">0</span><button id="plus2"><img src="plus-symbol-button.png"style="width: 35px ; height: 35px;" ></button>
+              <button id="buy1" class="btn btn-primary btn-lg" style="margin-left: 10%;" onclick="Price('22')"><span id="itemprice">22</span>$ Add to cart  </button>
+              
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://images.penguinrandomhouse.com/cover/9780807067994"  class="img-fluid rounded-start" alt="...">         
+
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">
+                  Man's Search for Meaning 
+                  </h5>
+                  <p class="card-text">
+                    Man's Search for Meaning is a 1946 book by Viktor Frankl chronicling his experiences as a prisoner in Nazi concentration camps during World War II, and describing his psychotherapeutic method...
+
+                  </p>
+                        <button  id="minus3"  ><img src="minus-sign.png" style="width: 35px ; height: 35px;"></button> <span id="amount3" style="font-size: 20px;padding: 10px;">0</span><button id="plus3"><img src="plus-symbol-button.png"style="width: 35px ; height: 35px;" ></button>
+                    
+                                      <button class="btn btn-primary btn-lg" style="margin-left: 10%;" onclick="Price('25')"id="buy2">25$Add to cart </button>
+              
+              
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://m.media-amazon.com/images/I/71SsuV6sH8L._AC_UF1000,1000_QL80_.jpg" class="img-fluid rounded-start" alt="...">         
+
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">Emotional Intelligence
+
+                </h5>
+                <p class="card-text">
+                  Emotional Intelligence: Why It Can Matter More Than IQ is a 1995 book by Daniel Goleman. In this book, Goleman posits that emotional intelligence is as important as IQ for success, including in academic, professional, social, and interpersonal aspects of one's life.
+
+                </p>
+    
+                 <button  id="minus4"  ><img src="minus-sign.png" style="width: 35px ; height: 35px;"></button> <span id="amount4" style="font-size: 20px;padding: 10px;">0</span><button id="plus4"><img src="plus-symbol-button.png"style="width: 35px ; height: 35px;" ></button>
+                    
+                                      <button id="buy3" class="btn btn-primary btn-lg" style="margin-left: 10%;"onclick="Price('9')">9$ Add to cart </button>
+              
+              
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://m.media-amazon.com/images/I/71e+awqCsvL._UF1000,1000_QL80_.jpg" class="img-fluid rounded-start" alt="...">         
+
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">Games People Play</h5>
+                <p class="card-text">
+                  Games People Play: The Psychology of Human Relationships is a 1964 book by psychiatrist Eric Berne. The book was a bestseller at the time of its publication, despite drawing academic criticism for some of the psychoanalytic theories it presented.
+
+                </p>
+                <button  id="minus5"  ><img src="minus-sign.png" style="width: 35px ; height: 35px;"></button> <span id="amount5" style="font-size: 20px;padding: 10px;">0</span><button id="plus5"><img src="plus-symbol-button.png"style="width: 35px ; height: 35px;" ></button>
+                    
+                                      <button id="buy4" class="btn btn-primary btn-lg" style="margin-left: 10%;" onclick="Price('12')">12$ Add to cart </button>
+              
+              
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://m.media-amazon.com/images/I/61haSrEowSL.jpg" class="img-fluid rounded-start" alt="...">         
+
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title"> The Psychopath Test</h5>
+                <p class="card-text">
+                  The Psychopath Test: A Journey Through the Madness Industry is a 2011 book written by British author Jon Ronson in which he explores the concept of psychopathy, along with the broader mental health "industry" including mental health professionals and the mass media.
+
+                </p>
+   </p>
+              <button  id="minus6"  ><img src="minus-sign.png" style="width: 35px ; height: 35px;"></button> <span id="amount6"  style="font-size: 20px;padding: 10px;">0</span><button id="plus6"><img src="plus-symbol-button.png"style="width: 35px ; height: 35px;" ></button>
+                    
+                                      <button id="buy5" class="btn btn-primary btn-lg" style="margin-left: 10%;"onclick="Price('20')">20$ Add to cart </button>
+              
+              
+            </div>
+            
+          </div>
+          
+        </div>
+      </div> 
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8LlnFeVB2lByoe43emEjaEz-gDWjCGdpopg&s" class="img-fluid rounded-start" alt="...">         
+
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">
+                  The Power of Habit
+                </h5>
+                <p class="card-text">
+           
+                
+                  The Power of Habit: Why We Do What We Do in Life and Business is a book by Charles Duhigg, a New York Times reporter, published in February 2012 by Random House. It explores the science behind habit creation and reformation. The book reached the best seller list for The New York Times, Amazon.com, and USA Today.
+
+                </p>
+            <button  id="minus7"  ><img src="minus-sign.png" style="width: 35px ; height: 35px;"></button> <span id="amount7" style="font-size: 20px;padding: 10px;">0</span><button id="plus7"><img src="plus-symbol-button.png"style="width: 35px ; height: 35px;" ></button>
+                    
+                                      <button id="buy6" class="btn btn-primary btn-lg" style="margin-left: 10%;" onclick="Price('35')">35$ Add to cart </button>
+              
+              
+            </div>
+            
+          </div>
+          
+        </div>
+      </div> 
+      <div class="card mb-3" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://i5.walmartimages.com/seo/The-48-Laws-of-Power-Paperback-9780140280197_7dec45f6-40f7-4417-af3f-05a72c470f1c.8dbbf32c58b03b3510ffcb80d2ce0253.jpeg" class="img-fluid rounded-start" alt="...">         
+
+
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title"> 48 Laws of Power</h5>
+                <p class="card-text">
+                  48 Laws of Power details the laws for attaining power in life, business, and more, and gives historical examples of each law in practice, as well as examples of those who do not respect these laws.</p>
+                     <button  id="minus8"  ><img src="minus-sign.png" style="width: 35px ; height: 35px;"></button> <span id="amount8" style="font-size: 20px;padding: 10px;">0</span><button id="plus8"><img src="plus-symbol-button.png"style="width: 35px ; height: 35px;" ></button>
+                    
+                                      <button id="buy7"class="btn btn-primary btn-lg" style="margin-left: 10%;" onclick="Price('40')">40$ Add to cart </button>
+              
+            </div>
+            
+          </div>
+          
+        </div>
+      </div> 
+      
+      <script src="script.js"></script>
+
+</body>
+</html>

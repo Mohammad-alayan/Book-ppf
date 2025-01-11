@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK-PPF</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body style="background-color: #DAD7CE;
+">
+<nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand d-md-none" href="#">
+        <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+        BOOK-PPF
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasLabel">Aperture</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav flex-grow-1 justify-content-between">
+            <li class="nav-item"><a class="nav-link" href="#">
+              <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+            </a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Store
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="self.html">Self Books</a></li>
+                <li><a class="dropdown-item" href="advanture.html">Fantasy Books</a></li>
+                <li><a class="dropdown-item" href="money.html">Money Books</a></li>
+                <li><a class="dropdown-item" href="psychology.html">Psychology</a></li>
+              </ul>
+            </div>       
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            
+            <li class="nav-item"><a class="nav-link" href="#">
+              <svg class="bi" width="24" height="24"><use xlink:href="#cart"></use></svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main >
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary" id="background">
+      <div class="col-md-6 p-lg-5 mx-auto my-5">
+        <h1 class="display-3 fw-bold" id="white">BOOK-PPF</h1>
+        <h3 class="fw-normal text mb-3"id="white">"Books are the mirrors of the soul"</h3>
+        <div class="d-flex gap-3 justify-content-center lead fw-normal">
+     <button id="btn" class="btn btn-secondary btn-lg" onclick="random()" >Press to get today's quote
+    </button>
+          <button  id="btn"  class="btn btn-secondary btn-lg" href="#">
+Contact us
+        </button>
+        </div>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+    <div class="col-12 d-flex" id="pad">
+   <div class="col-md-6" id="Fantasy">
+<h2 class="h2" >Fantasy Books</h2>
+ <p style="font-size: 25px; margin-top: 35px; width: 90%; margin-left: 8%;">"We live in a fantasy world, a world of illusion. The great task in life is to find reality.
+"</p>
+<p style="font-size: 45px; margin-top: 3%;width: 90%; margin-left: 8%;">Buy in 80$ and get 1 another free book</p>
+<a href="advanture.html" style="margin-left: 8%"><button class="btn btn-lg"  id="btn" style="margin-top:1%;">Shop Now</button></a>
+
+
+
+   </div>
+   <div class="col-md-6"id="money">
+    <h2 class="h2" >Money Books</h2>
+    <p style="font-size: 25px; margin-top: 35px; width: 90%; margin-left: 8%;">In today's world,Almost everything is possible with money. As a result, people work hard to earn it,So develop your financial information with our library.</p>
+   <p style="font-size: 35px; margin-top: 2%; width: 90%; margin-left: 8%;">Buy above 100$ and get a random discount</p>
+   <a href="money.html" style="margin-left: 8%"><button   id="btn" class="btn btn-secondary btn-lg"style="margin-top: 1%;">Shop Now</button></a>
+   
+  
+   </div>
+   
+  </div>
+  <div class="col-12 d-flex" id="pad" style="margin-top: 20px;
+">
+    <div class="col-md-6" id="psychology">
+      <h2 class="h2" >Psychology Books</h2>
+      <p id="para" style="font-size: 25px; margin-top: 35px; width: 90%; margin-left: 8%;">Psychology is a broad and diverse field that encompasses the<b style="color: rgba(0, 0, 0, 0.775);"> study of human thought, behavior, development,</b> personality, emotion, motivation, and more</p>
+     <p id="para" style="font-size: 40px; margin-top:3%;width: 90%; margin-left: 8%;">Buy in 50$ and get 10$ discount   </p>
+     <a href="psychology.html" style="margin-left: 8%"><button class="btn btn-secondary btn-lg" id="btn" style="margin-top: 4%;">Shop Now</button></a>
+    </div>
+ 
+    <div class="col-md-6"id="self">
+      <h2 class="h2" >Self development Books</h2>
+      <p id="para" style="font-size: 25px; margin-top: 35px; width: 90%; margin-left: 8%;">Self-help books typically advertise themselves as being able to increase self-awareness and performance, including satisfaction with one's life. </p>
+     <p id="para" style="font-size: 45px; margin-top: 3%; width: 90%; margin-left: 8%;">25% Sale for Any Book</p>
+     <a href="self.html" style="margin-left: 8%"><button  id="btn"  class="btn btn-secondary btn-lg"style="margin-top: 4%;">Shop Now</button></a>
+     
+      
+        </div>
+   </div>
+  </main>
+  <div class="container" style="background-color:#2d3640; color: #DAD7CE; border-radius: 20px;margin-top: 40px; margin-bottom: 20px;">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-4 mb-4" style="margin-left: 7%;">
+          <h5>Pages</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-"id="af">Home</a></li>
+            <li class="nav-item mb-2"><a href="advanture.html" class="nav-link p-0 text-body-"id="af">Fantasy books</a></li>
+            <li class="nav-item mb-2"><a href="self.html" class="nav-link p-0 text-body-"id="af">Self devlopment Books</a></li>
+            <li class="nav-item mb-2"><a href="money.html" class="nav-link p-0 text-body-"id="af">Money Books</a></li>
+            <li class="nav-item mb-2"><a href="psychology.html" class="nav-link p-0 text-body-"id="af">Psychology books</a></li>
+        
+            <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-body-"id="af">Contact us</a></li>
+
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 mb-3" style="margin-left: -2%;">
+          <h5>Recommended External Links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://rathi-ankit.medium.com/what-i-learnt-reading-40-books-on-money-c6b9ab11c90f"target="_blank" class="nav-link p-0 text-body-"id="af"></a></li>
+            <li class="nav-item mb-2"><a href="https://eringobler.com/best-personal-finance-books/"target="_blank" class="nav-link p-0 text-body-"id="af">Money Books</a></li>
+            <li class="nav-item mb-2"><a href="https://www.forbes.com/sites/entertainment/article/best-self-help-books/"target="_blank" class="nav-link p-0 text-body-"id="af">Contact us</a></li> 
+             <li class="nav-item mb-2"><a href="https://divbyzero.com/blog/personal-growth-books/" target="_blank" class="nav-link p-0 text-body-"id="af">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-3 mb-3" style="margin-left: 7%;">
+          <h5>Social link</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-" id="af">Instagram</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-" id="af">tiktok</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-" id="af">Facebook</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-" id="af">alayan.j.mohammad@gmail.com</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-" id="af">71-604-655</a></li>
+          </ul>
+        </div>
+  
+     
+       
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

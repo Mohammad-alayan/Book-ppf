@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store_Book PPF</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body style="background-color: #3D3D3D
+;">
+
+    <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand d-md-none" href="#">
+            <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+            BOOK-PPF
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasLabel"> BOOK-PPF</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 justify-content-between">
+                <li class="nav-item"><a class="nav-link" href="#">
+                  <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+                </a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Store
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="advanture.html">Fantasy Books</a></li>
+                      <li><a class="dropdown-item" href="money.html">Money Books</a></li>
+                      <li><a class="dropdown-item" href="psychology.html">Psychology</a></li>
+                    </ul>
+                  </div>              
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+    
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="#">
+                  <svg class="bi" width="24" height="24"><use xlink:href="#cart"></use></svg>
+                </a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+     <main>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" id="carousel">
+              <div class="carousel-item active" >
+                <img src="https://media.licdn.com/dms/image/C5612AQF7bXuGzmg1fw/article-cover_image-shrink_720_1280/0/1564159831139?e=2147483647&v=beta&t=S128FaUL7nleGwlv82PuynxjoUT8Q5gtpPN2JPJSYAM" class="d-block w-100" alt="..." id="height">
+
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="best-self-help-books-for-men.webp" class="d-block w-100 " id="height">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://149502452.v2.pressablecdn.com/wp-content/uploads/2021/02/mindset-book-cover-01-2048x1152.jpeg" class="d-block w-100" alt="..." id="height">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+      <div class="container d-flex p-2 justify-content-between flex-wrap" id="card-size">
+        <div class="card" style="width: 18rem;"id="cards">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSF5Yp1gAM5oSt8ijtEP-E7RIOvv1hbZioVCEugTBDSRVKvHtyn" class="card-img-top" alt="..." id="sideimg">
+            <div class="card-body">
+              <h5 class="card-title">The Gifts of Imperfection</h5>
+              <p class="card-text">
+                "This important book is about the lifelong journey from ?What will people think?' to ?I am enough.' Brown's unique ability to blend original research with honest storytelling makes reading "            </p>
+      
+                    
+       
+              <a href="orderS.html" id="btn" class="btn btn-primary">  Order Now <img src="add-to-cart.png" id="addtocart"></a>      
+            </div>
+            
+          </div>
+          <div class="card" style="width: 18rem;"id="cards">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDjoxEDv-Fely9wY47f_s0fTQorwEa932cu53LdmFKYUseIjzF" class="card-img-top" id="img"alt="...">
+            <div class="card-body">
+              <h5 class="card-title">
+                12 Rules for Life
+
+              </h5>
+              <p class="card-text">
+        
+                12 Rules for Life: An Antidote to Chaos is a 2018 self-help book by the Canadian clinical psychologist Jordan Peterson. It provides life advice through essays in abstract ethical principles, psychology, mythology, religion, and personal anecdotes</p>
+            <a href="orderS.html" id="btn" class="btn btn-primary">  Order Now <img src="add-to-cart.png" id="addtocart"></a>      
+
+          </div>
+          </div>  <div class="card" style="width: 18rem;"id="cards">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0CPzyADrTZT2g0a03Lh51eCAA9Any8wuXEnRgttzJ4nl21V3E" class="card-img-top" id="btn2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">
+                The 7 Habits of Highly Effective People
+              </h5>
+              <p class="card-text"> The 7 Habits of Highly Effective People, first published in 1989, is a business and self-help book written by Stephen R. Covey. The book goes over his ideas on how to spur and nurture personal change</p>
+                  
+              <a href="orderS.html" id="btn" class="btn btn-primary"> Order Now<img src="add-to-cart.png" id="addtocart"></a>      
+            </div>
+            </div>            <div class="card" style="width: 18rem;"id="cards">
+              <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYfnMOTORZdZTYo-HkP-wr-heRRWwmg9zJ6bBAiQRUDahrsne3" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">Atomic habits
+
+              </h5>
+              <p class="card-text">A supremely practical and useful book. James Clear distils the most fundamental information about habit formation, so you can accomplish more by focusing on less. </p>
+  
+              <a href="orderS.html" id="btn" class="btn btn-primary"> Order Now <img src="add-to-cart.png" id="addtocart"></a>      
+            </div>
+            </div>              </div>
+          </div> 
+          </div></div>
+          <div class="container d-flex p-2 justify-content-between flex-wrap" id="card-size">
+            <div class="card" style="width: 18rem;"id="cards">
+                <img src="think_and_grow_rich.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Think and Grow Rich</h5>
+                  <p class="card-text">Think and Grow Rich is a book written by Napoleon Hill and Rosa Lee Beeland released in 1937 and promoted as a personal development and self-improvement book. He claimed to be inspired by a suggestion from business magnate and later-philanthropist Andrew Carnegie.</p>
+                  <a href="orderS.html" id="btn" class="btn btn-primary">  Order Now<img src="add-to-cart.png" id="addtocart"></a>      
+
+                 </div>
+                </div>                 
+             
+              <div class="card" style="width: 18rem;"id="cards">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3DLWg2I-G0rNogE4KN4MTkpTNp6e-mz8t0f_MP7funZUufXa0" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">The Power of Now</h5>
+                  <p class="card-text">The Power of Now: A Guide to Spiritual Enlightenment is a book by Eckhart Tolle. It is a discussion about how people interact with themselves and others. The concept of self-reflection and presence in the moment are presented along with simple exercises for the achievement of its principles.</p>
+             
+                  <a href="orderS.html" id="btn" class="btn btn-primary">  Order Now<img src="add-to-cart.png" id="addtocart"></a>      
+                </div>
+              </div>  <div class="card" style="width: 18rem;"id="cards">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSom7qFxq5BuGjKr8OWe_nCkLkvFq9s1Vxswdt7T9yKKBzMmLZX" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">                  Thinking, Fast and Slow
+                  </h5>
+                  <p class="card-text">
+             
+                  
+                    Thinking, Fast and Slow is a 2011 popular science book by psychologist Daniel Kahneman. The book's main thesis is a differentiation between two modes of thought: "System 1" is fast, instinctive and emotional; "System 2" is slower, more deliberative, and more logical</p>
+                  <a href="orderS.html" id="btn" class="btn btn-primary">  Order Now <img src="add-to-cart.png" id="addtocart"></a>      
+
+                </div>
+              </div>  <div class="card" style="width: 18rem;"id="cards">
+                <img src="https://www.jashanmal.com/cdn/shop/products/6281072097776.jpg?v=1689247913" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">الأب الغني والأب الفقير </h5>
+                  <p class="card-text">يأتي كتاب الأب الغني والأب الفقير، كمحاولة للحد من طوفان العالم الاستهلاكي الذي طغى على حياتنا بشكل غير مسبوق. يحاول مؤلف الكتاب الملياردير روبرت تي كيوساكي إصلاح مفاهيم ترسّخت عند أغلب الناس، فرضوا بالعيش داخل حلبة الحياة الكبيرة كمتسابقين أساسيين في سباق الفئران الذي لا ينتهي.
+                  </p>
+                  <a href="orderS.html" id="btn" class="btn btn-primary">  Order Now<img src="add-to-cart.png" id="addtocart"></a>      
+
+              </div>  
+              </div></div>
+            
+            </main>
+            <script src="script.js"></script>
+
+            </body>
+</html>
