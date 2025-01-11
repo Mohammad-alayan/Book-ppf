@@ -89,7 +89,9 @@ body{
         font-size: 50px;
         margin-top: 70px !important;
     }
-  
+  .card{
+    width: 100%;
+  }
 }
 #im{
 width:100px;
