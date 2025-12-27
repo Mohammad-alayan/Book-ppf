@@ -77,10 +77,7 @@ body{
     
 }
 @media screen and (max-width:878px) {
-    #pad{
-        display:none !important;
-
-    }
+   
     #background{
         height: 700px;
     }
@@ -241,4 +238,48 @@ box-shadow: 0 0 30px #F5ECD5;
 #div{
     display: none;
 
+}
+.lead{
+margin-top: 7%!important;
+}
+/* Mobile-specific fixes */
+@media (max-width: 767px) {
+    /* Center the card body content */
+    .card-body {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    /* Plus and Minus buttons */
+    .card-body button[id^="plus"],
+    .card-body button[id^="minus"] {
+        width: 40px !important;
+        height: 40px !important;
+        margin: 5px !important;
+        padding: 0 !important;
+        display: inline-flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    /* Amount span */
+    .card-body span[id^="amount"] {
+        font-size: 18px !important;
+        padding: 5px 10px !important;
+        display: inline-block !important;
+    }
+
+    /* Add to cart button */
+    .card-body button[id^="buy"] {
+        width: 90% !important;
+        max-width: 300px !important;
+        margin: 10px auto !important;
+        display: block !important;
+        margin-left: 0 !important; /* override desktop margin */
+    }
+    #buy,#buy1,#buy2,#buy3,#buy4,#buy5,#buy6,#buy7,#buy8{
+    min-width:100% ; 
+}
 }
